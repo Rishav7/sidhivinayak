@@ -1,0 +1,15 @@
+import React from 'react';
+import { CheckCircle2, Compass, HeartHandshake, Wrench } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import SectionHeading from '../components/SectionHeading.jsx';
+import { business } from '../config/business.js';
+import '../styles/about.css';
+import ProductVisual from '../components/ProductVisual.jsx';
+
+export default function About() {
+  return <div className="page-shell"><section className="page-hero"><div className="container page-hero-inner"><div><span className="eyebrow eyebrow-light">ABOUT OUR BUSINESS</span><h1>Hardware essentials for everyday progress.</h1><p>Meet {business.name}, your local starting point for plumbing and hardware enquiries.</p></div></div></section>
+    <section className="section"><div className="container about-story"><div className="about-story-image"><ProductVisual category="water-tanks" title="Water tanks from our own factory"/></div><div className="about-story-copy"><span className="eyebrow">WHO WE ARE</span><h2>A practical place to start your next project.</h2><p>{business.name} is a hardware, plumbing and building-supplies shop offering a catalogue of everyday essentials such as pipes, all types of taps, showers, fittings and general hardware items. We also manufacture water tanks at our own factory.</p><p>Whether you are planning a home repair, upgrading a bathroom or sourcing materials for a project, you can explore the product categories and contact us to ask about suitable options.</p><p>Customers can enquire about tank capacity, product specifications, prices and availability directly with the shop. Specific options are confirmed on enquiry.</p><p><strong>Contact:</strong> {business.ownerName} · <strong>Location:</strong> {business.city}</p><Link to="/products" className="button button-primary">Explore our products</Link></div></div></section>
+    <section className="section about-values"><div className="container"><SectionHeading eyebrow="WHAT WE FOCUS ON" title="A helpful, straightforward experience" description="Our website is designed to make browsing and product enquiries simple."/><div className="values-grid"><div className="value-card"><span><Wrench size={24}/></span><h3>Useful product range</h3><p>Browse plumbing supplies, water storage, taps, fittings and general hardware.</p></div><div className="value-card"><span><HeartHandshake size={24}/></span><h3>Helpful conversations</h3><p>Contact us with your requirements and ask about options before deciding.</p></div><div className="value-card"><span><Compass size={24}/></span><h3>Easy to get started</h3><p>Explore categories online, then reach out to the shop for details.</p></div></div></div></section>
+    <section className="section about-last"><div className="container about-last-inner"><div><span className="eyebrow eyebrow-light">LET'S TALK HARDWARE</span><h2>Have a product in mind?</h2><p>Browse the catalogue or send us an enquiry about what you need.</p></div><Link className="button button-light" to="/contact">Contact the shop <CheckCircle2 size={17}/></Link></div></section>
+  </div>;
+}
