@@ -3,8 +3,8 @@ export const business = {
   name: 'Sidhi Vinayak Trading',
   ownerName: 'Guddu Sahu',
   tagline: 'Pipes • Taps • Showers • Water Tanks',
-  phoneDisplay: '7259232381',
-  phoneDigits: '+917259232381',
+  phoneDisplay: '9304863221',
+  phoneDigits: '+919304863221',
   // WhatsApp number was supplied only as '+91'; do not assume the phone number is also WhatsApp.
   whatsappDigits: '',
   address: 'Sidhi Vinayak Trading, Nawadah, Bihar',
